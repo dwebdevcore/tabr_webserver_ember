@@ -1,0 +1,43 @@
+/* Ember Bootstrap */
+$font-family: "Noto Sans", sans-serif;
+$font-family-sans-serif: "Noto Sans", sans-serif;
+$font-family-serif:      "Noto Serif", serif;
+$font-family-monospace:  monospace;
+$font-family-base:       $font-family-sans-serif;
+
+$theme-colors: (
+  "primary": #1976d2,
+  "secondary": #ff9800,
+  "success": #81c784,
+  "info": #80d8ff,
+  "warning": #ffd740,
+  "danger": #e65100,
+  "light": #f8f9fa,
+  "dark": #212529
+);
+
+@import "ember-bootstrap/bootstrap";
+
+/* Ember Power Select */
+$ember-power-select-material-active-color: rgb(25, 118, 210);
+@import "ember-power-select/themes/material";
+@import "ember-power-select";
+
+/* Ember Paper */
+@import 'color-palette';
+$primary: map-merge($color-blue, (
+	'default': '700'
+));
+
+$accent: map-merge($color-green, (
+	'default': '300'
+));
+
+$warn: map-merge($color-amber, (
+	'default': 'A200'
+));
+
+@import 'ember-paper';
+@import "ember-paper-expansion-panel";
+@import "ember-paper-stepper";
+@import "ember-paper-link";
